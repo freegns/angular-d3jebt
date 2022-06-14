@@ -1,0 +1,11 @@
+<div class="example-container">
+  <h2>palette</h2>
+  <div
+    cdkDropList
+    [cdkDropListData]="pal"
+    (cdkDropListDropped)="drop($event)"
+    class="example-list">
+    <div class="example-box" *ngFor="let item of pal" cdkDrag>{{item.name}}</div>
+  </div>
+</div>
+
